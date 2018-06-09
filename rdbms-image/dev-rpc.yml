@@ -40,6 +40,8 @@ services:
     environment:
       MAX_HEAP_SIZE: "512m"
       MIN_HEAP_SIZE: "512m"
+    volumes:
+      - ./hazelcast.xml:/opt/hazelcast/hazelcast.xml:ro,z
 
 volumes:
   devicehive-db-dev:

@@ -24,6 +24,10 @@ spec:
           value: {{ .Values.javaServer.hazelcast.minHeapSize | quote }}
         - name: MAX_HEAP_SIZE
           value: {{ .Values.javaServer.hazelcast.maxHeapSize | quote }}
+        - name: HAZELCAST_KUBERNETES_NAMESPACE
+          value: {{ .Release.Namespace }}
+        - name: HAZELCAST_KUBERNETES_SERVICE_NAME
+          value: {{ .Release.Name }}-devicehive-hazelcast
         ports:
         - name: hazelcast
           containerPort: 5701

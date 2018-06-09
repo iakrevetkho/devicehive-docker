@@ -110,6 +110,8 @@ services:
     environment:
       MAX_HEAP_SIZE: "512m"
       MIN_HEAP_SIZE: "512m"
+    volumes:
+      - ./hazelcast.xml:/opt/hazelcast/hazelcast.xml:ro,z
 
   dh_backend_node:
     image: devicehive/devicehive-backend-node:${DH_BACKEND_NODE_TAG:-development}

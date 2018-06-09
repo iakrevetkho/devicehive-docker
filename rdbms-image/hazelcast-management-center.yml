@@ -3,8 +3,6 @@ services:
   hazelcast:
     links:
       - "hazelcast-mancenter"
-    volumes:
-      - ./hazelcast.xml:/opt/hazelcast/hazelcast.xml:ro,z
 
   hazelcast-mancenter:
     image: hazelcast/management-center:3.8.5
