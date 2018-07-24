@@ -5,9 +5,6 @@ description: Open Source IoT Data Platform with the wide range of integration op
 home: https://www.devicehive.com/
 icon: https://files.readme.io/oTwbMTEQTKq2CwezNLJ3_DH-logo.png
 sources:
-  - https://github.com/helm/charts/tree/master/incubator/kafka
-  - https://github.com/helm/charts/tree/master/stable/postgresql
-  - https://github.com/helm/charts/tree/master/stable/redis
   - https://github.com/devicehive/devicehive-java-server
   - https://github.com/devicehive/devicehive-docker
   - https://github.com/devicehive/devicehive-admin-panel
